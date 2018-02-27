@@ -1,0 +1,2 @@
+
+tinymce.init({ selector: '.tinymce' });

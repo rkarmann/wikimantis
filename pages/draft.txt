@@ -1,0 +1,31 @@
+if( !is_null( $id_product ) ){
+
+  $module_table = plugin_table( "module", "wikiCylande" );
+
+  $query = "SELECT * FROM {$module_table} WHERE id_parameter=" . db_param() . " ORDER BY module_name ASC";
+  $result = db_query( $query, array( $id_product ) );
+
+  while( $data = db_fetch_array( $result ) ){
+    $id = $data[ 'id' ];
+    $name = $data[ 'module_name' ];
+
+    $option_array[] = array("id" => $id, "name" => $name );
+  }
+
+} elseif( !is_null( $id_module ) ){
+
+  $type_table = plugin_table( "type", "wikiCylande" );
+
+  $query = "SELECT * FROM {$type_table} WHERE id_parameter=" . db_param() . " ORDER BY type_name ASC";
+  $result = db_query( $query, array( $id_module ) );
+
+  while( $data = db_fetch_array( $result) ){
+    $id = $data[ 'id' ];
+    $name = $data[ 'type_name' ];
+
+    $option_array[] = array("id" => $id, "name" => $name );
+  }
+
+} else {
+  # Ne rien faire....
+}
