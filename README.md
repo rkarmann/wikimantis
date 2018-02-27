@@ -17,16 +17,15 @@ Undefined
 - Light and modern UI
 
 # Work in progress
--> Add AJAX functions to avoid page redirection
--> Rename all API files and ease them
--> Create own Wiki events so that Mantis UI is not impacted by the resources loading (CSS, JS)
--> Make it work...
+- Add AJAX functions to avoid page redirection
+- Rename all API files and ease them
+- Create own Wiki events so that Mantis UI is not impacted by the resources loading (CSS, JS)
+- Make it work...
 
 # TO DO:
-> Use CRUD system to improve Wiki performance
-> Ouput some Wiki "box" inside the bug report page, so users can find articles linked to their request
-> Improve security and validation
-> ...
+- Use CRUD system to improve Wiki performance
+- Ouput some Wiki "box" inside the bug report page, so users can find articles linked to their request
+- Improve security and validation
+- ...
 
-# Contact
-romainkarmann@gmail.com | MantisBT plugin's forum : https://mantisbt.org/forums/viewforum.php?f=15 | @rkarmann
+> romainkarmann@gmail.com | MantisBT plugin's forum : https://mantisbt.org/forums/viewforum.php?f=15 | @rkarmann
